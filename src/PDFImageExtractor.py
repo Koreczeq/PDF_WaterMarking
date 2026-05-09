@@ -8,7 +8,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 
 class PDFImageExtractor:
     """A class to extract images from a PDF file."""
-    def __init__(self, pdf_path: str, output_dir: str = 'extracted_images'):
+    def __init__(self, pdf_path: str, output_dir: str = 'data/extracted_images'):
         self.pdf_path = pdf_path
         self.output_dir = output_dir
         if not os.path.exists(self.output_dir):
